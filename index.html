@@ -17,7 +17,7 @@
     <title>WebStudio</title>
   </head>
   <body>
-    <!-- HEADER SECTION -->
+    <!-- header section -->
 
     <header class="header">
       <div class="header-content container">
@@ -53,24 +53,94 @@
           </ul>
         </address>
 
-        <button type="button" class="burger-btn">
+        <button type="button" class="burger-btn" data-menu-open>
           <svg class="burger-icon" width="24" height="24">
             <use href="./images/icons.svg#icon-menu"></use>
           </svg>
         </button>
       </div>
+
+      <div class="mobile-menu" data-menu>
+        <div class="container mobile-menu-container">
+          <button type="button" class="mobile-menu-close" data-menu-close>
+            <svg class="modal-close-icon" width="8" height="8">
+              <use href="./images/icons.svg#icon-close"></use>
+            </svg>
+          </button>
+          <nav class="mobile-menu-nav">
+            <ul class="mobile-nav-list">
+              <li class="mobile-nav-item">
+                <a class="mobile-nav-link current" href="./index.html"
+                  >Studio</a
+                >
+              </li>
+              <li class="mobile-nav-item">
+                <a class="mobile-nav-link" href="">Portfolio</a>
+              </li>
+              <li class="mobile-nav-item">
+                <a class="mobile-nav-link" href="">Contacts</a>
+              </li>
+            </ul>
+          </nav>
+          <address>
+            <ul class="mobile-contacts-list">
+              <li class="mobile-contacts-item">
+                <a href="mailto:info@devstudio.com" class="mobile-contacts-link"
+                  >info@devstudio.com</a
+                >
+              </li>
+              <li class="mobile-contacts-item">
+                <a href="tel:+110001111111" class="mobile-contacts-link"
+                  >+11 (000) 111-11-11</a
+                >
+              </li>
+            </ul>
+          </address>
+
+          <ul class="mobile-social-list">
+            <li class="mobile-social-item">
+              <a href="" class="mobile-social-link">
+                <svg class="icon" width="24" height="24">
+                  <use href="./images/icons.svg#icon-instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="mobile-social-item">
+              <a href="" class="mobile-social-link">
+                <svg class="icon" width="24" height="24">
+                  <use href="./images/icons.svg#icon-twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="mobile-social-item">
+              <a href="" class="mobile-social-link">
+                <svg class="icon" width="24" height="24">
+                  <use href="./images/icons.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="mobile-social-item">
+              <a href="" class="mobile-social-link">
+                <svg class="icon" width="24" height="24">
+                  <use href="./images/icons.svg#icon-linkedin"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
     </header>
 
     <main>
-      <!-- HERO SECTION -->
-      <!-- <section class="hero">
+      <!-- hero section -->
+      <section class="hero">
         <div class="hero-content container">
           <h1 class="hero-title">Effective Solutions for Your Business</h1>
           <button type="button" class="hero-btn hero-btn-text">
             Order Service
           </button>
         </div>
-      </section> -->
+      </section>
       <!-- ADVANTAGES SECTION -->
       <!-- <section class="advantages">
         <div class="advantages-content container">
@@ -607,5 +677,6 @@
         </form>
       </div>
     </div> -->
+    <script src="./js/menu.js"></script>
   </body>
 </html>

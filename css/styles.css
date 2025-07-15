@@ -527,6 +527,7 @@ input {
 
   .advantages-list-item {
     margin: 0;
+    width: calc((100% - 24px) / 2);
   }
 
   .advantages-list-item-title {

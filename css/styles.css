@@ -774,7 +774,7 @@ input {
     position: relative;
     overflow: hidden;
     cursor: pointer;
-    height: 300px;
+    max-height: 300px;
   }
 
   .overlay {
